@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, 
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+/* HEADER START */
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+}
+
+.text {
+    font-weight: 600;
+    letter-spacing: 8px;
+    animation: myAnim 2s ease 0s normal none;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 200px;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    font-size: 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    animation: text 3s 1;
+    margin-left: 100px;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    animation: myAnim 2s ease 0s normal none;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* HEADER END */
+
+/* INTRO START */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1000px;
+    padding-top: 100px;
+    background: #31344e;
+    background: url(./img/bg.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 70px;
+    color: black;
+    margin: -7px;
+    text-align: center;
+
+}
+
+.intro__subtitle {
+    text-align: center;
+    margin-bottom: 204px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
